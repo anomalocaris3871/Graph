@@ -14,6 +14,12 @@ int main() {
 	printf("The Graph that is maded by Adjacent Array\n");
 	g.display();
 
+	g.store("graph.txt");
+	g.reset();
+	g.load("graph.txt");
+	printf("The Graph that is maded by Adjacent Array(file open)\n");
+	g.display();
+
 	return 0;
 }
 

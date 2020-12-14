@@ -59,5 +59,32 @@ public:
 			fprintf(fp, "\n");
 		}
 	}
+	void load(const char* filename) {
+		FILE* fp = fopen(filename, "r");
+		if (fp != nullptr) {
+			int n, val;
+			fscanf(fp, "%d", &n);
+			for (int i = 0;i < n;++i) {
+				char str[80];
+				fscanf(fp, "%s", str);
+				insertVertex(str[0]);
+				for (int j = 0;j < n;++j) {
+					int val;
+					fscanf(fp, "%d", &val);
+					if (val != 0) {
+						insertEdge(i, j);
+					}
+				}
+			}
+			fclose(fp);
+		}
+	}
+	void store(const char* filename) {
+		FILE* fp = fopen(filename, "w");
+		if (fp != nullptr) {
+			display(fp);
+			fclose(fp);
+		}
+	}
 };
 
