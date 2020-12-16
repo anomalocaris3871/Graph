@@ -1,24 +1,25 @@
 #include "AdjMatGraph.h"
+#include "AdjListGraph.h"
 
 int main() {
-	AdjMatGraph g;
+	AdjListGraph AdjListGraph;
 
 	for (int i = 0; i < 4;++i) {
-		g.insertVertex('A' + i);
+		AdjListGraph.insertVertex('A' + i);
 	}
-	g.insertEdge(0, 1);
-	g.insertEdge(0, 3);
-	g.insertEdge(1, 2);
-	g.insertEdge(1, 3);
-	g.insertEdge(2, 3);
-	printf("The Graph that is maded by Adjacent Array\n");
-	g.display();
+	AdjListGraph.insertEdge(0, 1);
+	AdjListGraph.insertEdge(0, 3);
+	AdjListGraph.insertEdge(1, 2);
+	AdjListGraph.insertEdge(1, 3);
+	AdjListGraph.insertEdge(2, 3);
 
-	g.store("graph.txt");
-	g.reset();
-	g.load("graph.txt");
-	printf("The Graph that is maded by Adjacent Array(file open)\n");
-	g.display();
+	AdjListGraph.display();
+
+	AdjMatGraph AdjMatGraph;
+
+	AdjMatGraph.reset();
+	AdjMatGraph.load("graph.txt");
+	AdjMatGraph.display();
 
 	return 0;
 }

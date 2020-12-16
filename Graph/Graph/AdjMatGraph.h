@@ -50,6 +50,7 @@ public:
 	}
 
 	void display(FILE* fp = stdout) {
+		printf("The Graph that is maded by Adjacent Array\n");
 		fprintf(fp, "%d\n", size);
 		for (int i = 0; i < size;++i) {
 			fprintf(fp, "%c ", getVertex(i));
