@@ -8,7 +8,7 @@ protected:
 	char vertices[MAX_VTXS];
 	Node* adj[MAX_VTXS];
 public:
-	AdjListGraph() : size(0) {
+	AdjListGraph() : size(0), adj{} {
 	}
 	~AdjListGraph() {
 		reset();
@@ -41,7 +41,7 @@ public:
 	}
 	void insertEdge(int u, int v) {
 		adj[u] = new Node(v, adj[u]);
-		adj[v] = new Node(u, adj[v]);
+		//adj[v] = new Node(u, adj[v]);
 	}
 
 	void display() {
@@ -65,17 +65,19 @@ public:
 		if (fp != nullptr) {
 			int n, val;
 			fscanf(fp, "%d", &n);
+		
 			for (int i = 0;i < n;++i) {
 				char str[80];
 				fscanf(fp, "%s", str);
 				insertVertex(str[0]);
-				for (int j = 0;j < n;++j) {
+				for (int j = 0 ;j < n;++j) {
 					int val;
 					fscanf(fp, "%d", &val);
 					if (val != 0) {
 						insertEdge(i, j);
 					}
 				}
+				printf("\n");
 			}
 			fclose(fp);
 		}
