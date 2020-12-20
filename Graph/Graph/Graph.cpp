@@ -11,6 +11,12 @@ int main() {
 	g.DFS(0);
 	printf("\n");
 
+	printf("BFS ==> ");
+	g.resetVisited();
+	g.BFS(0);
+	printf("\n");
+
+
 	SrchALGraph g2;
 	g2.load("graph.txt");
 	g2.display();
@@ -19,6 +25,14 @@ int main() {
 	g2.resetVisited();
 	g2.DFS(0);
 	printf("\n");
+
+	printf("BFS ==> ");
+	g2.resetVisited();
+	g2.BFS(0);
+	printf("\n");
+
+
+
 
 
 	return 0;
