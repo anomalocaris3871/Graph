@@ -3,6 +3,7 @@
 #include <queue>
 
 class SrchAMGraph :public AdjMatGraph {
+protected:
 	bool visited[MAX_VTXS];
 public:
 	void resetVisited() {
