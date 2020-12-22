@@ -145,6 +145,7 @@
     <ClInclude Include="Node.h" />
     <ClInclude Include="SrchALGraph.h" />
     <ClInclude Include="SrchAMGraph.h" />
+    <ClInclude Include="TopoSortGraph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graph.cpp" />
