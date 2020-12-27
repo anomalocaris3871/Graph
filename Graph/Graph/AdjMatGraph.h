@@ -55,7 +55,7 @@ public:
 		for (int i = 0; i < size;++i) {
 			fprintf(fp, "%c ", getVertex(i));
 			for (int j = 0;j < size;++j) {
-				fprintf(fp, "%3d", getEdge(i, j));
+				fprintf(fp, "%8d", getEdge(i, j));
 			}
 			fprintf(fp, "\n");
 		}

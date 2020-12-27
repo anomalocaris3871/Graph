@@ -36,6 +36,9 @@
     <ClInclude Include="TopoSortGraph.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="WGraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graph.cpp">
@@ -47,6 +50,9 @@
       <Filter>리소스 파일</Filter>
     </Text>
     <Text Include="ConnetedGraph.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="WGraph.txt">
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>

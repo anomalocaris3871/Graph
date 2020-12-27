@@ -146,6 +146,7 @@
     <ClInclude Include="SrchALGraph.h" />
     <ClInclude Include="SrchAMGraph.h" />
     <ClInclude Include="TopoSortGraph.h" />
+    <ClInclude Include="WGraph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graph.cpp" />
@@ -153,6 +154,7 @@
   <ItemGroup>
     <Text Include="ConnetedGraph.txt" />
     <Text Include="graph.txt" />
+    <Text Include="WGraph.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

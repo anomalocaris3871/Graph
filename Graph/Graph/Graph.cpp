@@ -1,6 +1,7 @@
 #include "ConnectedComponentGraph.h"
 #include "SrchALGraph.h"
 #include "TopoSortGraph.h"
+#include "WGraph.h"
 
 int main() {
 	SrchAMGraph g;
@@ -54,6 +55,14 @@ int main() {
 	g4.insertDirEdge(4, 5);
 	printf("Topology Sort : ");
 	g4.TopoSort();
+
+
+	printf("\n===================================\n");
+	WGraph g5;
+	g5.load("WGraph.txt");
+	printf("Weighted Graph\n");
+	g5.display();
+
 	
 
 
