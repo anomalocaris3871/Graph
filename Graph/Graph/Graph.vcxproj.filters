@@ -39,6 +39,18 @@
     <ClInclude Include="WGraph.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="VertexSets.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WGraphMST.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHeap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graph.cpp">

@@ -1,9 +1,10 @@
 #include "ConnectedComponentGraph.h"
 #include "SrchALGraph.h"
 #include "TopoSortGraph.h"
-#include "WGraph.h"
+#include "WGraphMST.h"
 
 int main() {
+
 	SrchAMGraph g;
 	g.load("graph.txt");
 	g.display();
@@ -57,14 +58,18 @@ int main() {
 	g4.TopoSort();
 
 
-	printf("\n===================================\n");
+	printf("\n\n\n===================================\n");
 	WGraph g5;
 	g5.load("WGraph.txt");
 	printf("Weighted Graph\n");
 	g5.display();
 
-	
 
+	printf("\n\n\n===================================\n");
+	WGraphMST g6;
+	g6.load("WGraph.txt");
+	printf("MST By Kruskal's Algorithm\n");
+	g6.kruskal();
 
 	return 0;
 }
