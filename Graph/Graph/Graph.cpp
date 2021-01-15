@@ -71,6 +71,12 @@ int main() {
 	printf("MST By Kruskal's Algorithm\n");
 	g6.kruskal();
 
+	printf("\n\n\n===================================\n");
+	WGraphMST g7;
+	g7.load("WGraph.txt");
+	printf("MST By Prim's Algorithm\n");
+	g7.Prim(0);
+
 	return 0;
 }
 
